@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("C:\\Users\\Görkem\\Desktop\\data_ex\\netflix_cleaned_data.csv")
 
 
-#Find the most countries that added more title in 2020 and show them with a bar chart
+#Find the most 5 countries that added more title in 2020 and show them with a bar chart
 data= data[data["year_added"]==2020]
 
 data["country"] = data["country"].str.split(",")
